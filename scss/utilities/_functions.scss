@@ -1,0 +1,18 @@
+// Calculate em values
+
+@function em($target, $context: $base__font-size) {
+	@return ($target / $context) * 1em;
+}
+
+
+// Button Mix in
+@mixin button {
+  color: white;
+  background: #F8931F;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, .2);
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0 5px 4px -4px black;
+  outline: none;
+}
